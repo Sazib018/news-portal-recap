@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from '../Shared/TopBar/TopBar';
 import NavBar from '../Shared/NavBar/NavBar';
 import Marquee from 'react-fast-marquee';
+import HomeLayout from '../../Layouts/HomeLayout';
 
 const Home = () => {
     return (
@@ -20,6 +21,9 @@ const Home = () => {
 
            <div className='mt-[21px]'>
             <NavBar></NavBar>
+           </div>
+           <div className='mt-20'>
+            <HomeLayout></HomeLayout>
            </div>
         </div>
     );
