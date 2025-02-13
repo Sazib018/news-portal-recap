@@ -10,8 +10,9 @@ const NewsDetails = () => {
             <TopBar></TopBar>
             </div>
             <div className='flex gap-6'>
-            <div className='max-w-[849px]'>
-            <DetailsCard></DetailsCard></div>  
+            <div>
+            <DetailsCard></DetailsCard>
+            </div>  
              <div className='justify-center max-w-[267px]'>
              <RightNav></RightNav> 
              </div>
