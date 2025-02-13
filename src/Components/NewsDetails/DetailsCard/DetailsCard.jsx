@@ -28,7 +28,7 @@ const DetailsCard = () => {
         <p className="text-[#403F3F] mt-4">
         {newsInfo.details}
         </p>
-       <Link to={`/newCards/${newsInfo._id}`} > <button className="mt-5 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+       <Link to={`/home`} > <button className="mt-5 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
           ← All news in this category
         </button></Link>
       </div>
