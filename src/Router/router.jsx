@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Home from "../Components/Home/Home";
 import HomeMiddle from "../Components/Home/HomeMiddle/HomeMiddle";
 import NewsDetails from "../Components/NewsDetails/NewsDetails";
@@ -11,6 +11,10 @@ export const router = createBrowserRouter([
         path:"/",
         element:<Home></Home>,
         children:[
+            {
+                path: "/",
+                element: <Navigate to="/01" />,  // Redirect to default ID
+            },
             {
                 path:'/:id',
                 element:<HomeMiddle></HomeMiddle>,
