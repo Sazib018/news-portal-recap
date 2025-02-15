@@ -17,8 +17,8 @@ const AuthProvider = ({ children }) => {
     }
 
     const signInWithGithub = () => {
-        return signInWithPopup(auth, githubProvider);
-    };
+        return signInWithPopup(auth, githubProvider)
+    }
     const profileUpdate = (name, photoURL) => {
         return updateProfile(auth.currentUser, {
             displayName: name,
